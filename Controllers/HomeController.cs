@@ -17,14 +17,14 @@ namespace CoreWithSwag.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "product1", "product2" };
+            return new string[] { "Regular Broadband", "Fibre Broadband", "Broadband & TV", "Broadband, TV and Calls" };
         }
 
         //Get Product By ID
         [HttpGet("{id}")]
         public string Get (int id)
         {
-            return "product";
+            return "You have selected this Talk-Talk product, enjoy!";
         }
 
         //POST PRODUCT
@@ -48,34 +48,17 @@ namespace CoreWithSwag.Controllers
 
         }
 
+        //----------------------------------------------------------
 
-    
+        
+
+
 
 
     }
+
+    
+
 }
 
-
-//private readonly ILogger<HomeController> _logger;
-
-//public HomeController(ILogger<HomeController> logger)
-//{
-//    _logger = logger;
-//}
-
-//public IActionResult Index()
-//{
-//    return View();
-//}
-
-//public IActionResult Privacy()
-//{
-//    return View();
-//}
-
-//[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-//public IActionResult Error()
-//{
-//    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-//}
 

@@ -28,7 +28,7 @@ namespace CoreWithSwag
             services.AddControllersWithViews();
             services.AddSwaggerGen(c =>
            {
-               c.SwaggerDoc("v1", new OpenApiInfo { Title = "My Core API", Description = "Swagger Core API" });
+               c.SwaggerDoc("v1", new OpenApiInfo { Title = "Talk-Talk Mock Site", Description = "Swagger Core API" });
 
            });
                 
